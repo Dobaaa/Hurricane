@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #952E78;
+    --secondary-color: #6D2258;
+    --textone-color: #3E264E;
+    --texttwo-color: #4F4159;
+    --pink-color: #E55C7F;
+    --orange-color: #F1844D;
+    --orange-color-dark: #EF7334;
+    --orange-color-bold: #ED611C;
+    --primary-gradient: linear-gradient(90deg,
+            #68266B 0%,
+            #BD2B82 100%);
+    --orange-gradient: linear-gradient(90deg,
+            #E65883 0%,
+            #F6B06B 100%);
+    --orange-gradient-dark: linear-gradient(90deg,
+            #E00F7E 0%,
+            #FECC4A 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 400;
+    color: var(--texttwo-color);
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../assets/fonts/Metropolis-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../assets/fonts/metropolis-regular-webfont.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../assets/fonts/metropolis-medium-webfont.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../assets/fonts/metropolis-bold-webfont.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+li {
+    list-style: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+nav {
+    padding: 10px 40px;
+}
+
+nav a {
+    color: var(--texttwo-color);
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.img-logo {
+    max-width: 214px;
+    max-height: 72px;
+}
+
+
+
+/*hero section start*/
+.hero-section {
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+/*hero section end*/
+
+/* about section start */
+.about-section {
+    padding: 80px 0 100px;
+    background-color: #f7f5f8;
+}
+
+.about-header {
+    max-width: 66.666%;
+    margin-bottom: 48px;
+}
+
+.about-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: var(--textone-color);
+}
+
+.about-title-line {
+    display: block;
+}
+
+.about-title-accent {
+    display: block;
+    color: var(--pink-color);
+}
+
+.about-intro {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--texttwo-color);
+    font-weight: 400;
+}
+
+.about-intro strong {
+    font-weight: 700;
+    color: var(--textone-color);
+}
+
+.about-visual {
+    margin-bottom: 72px;
+}
+
+.about-image-wrap {
+    border-radius: 4px;
+
+}
+
+.about-image {}
+
+.about-quote {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--textone-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-quote em {
+    font-style: italic;
+    color: var(--pink-color);
+    font-weight: 500;
+}
+
+.dangers-heading {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: var(--textone-color);
+    margin-bottom: 40px;
+}
+
+.danger-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.danger-icon {
+    color: var(--pink-color);
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.danger-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.danger-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--textone-color);
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.danger-text {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--texttwo-color);
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.danger-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    .about-header {
+        max-width: 100%;
+    }
+
+    .about-quote {
+        margin-top: 8px;
+    }
+}
+
+/* about section end */
