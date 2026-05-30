@@ -12,22 +12,34 @@
 <body>
 
     <!--nav bar-->
-    <nav class="d-flex justify-content-between align-items-center">
-        <div class="logo">
-            <img class="img-logo" src="./assets/logo.png" alt="logo">
-        </div>
-        <ul class="nav-links d-flex justify-content-center align-items-center gap-5">
-            <li><a href="#">Safety Films</a></li>
-            <li><a href="#">Residential</a></li>
-            <li><a href="#">Commercial</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <div>
-                <button>888-413-8038</button>
-            </div>
-        </ul>
+    <header class="site-header">
+        <div class="nav-gradient-bar" aria-hidden="true"></div>
+        <nav class="site-nav" id="site-nav">
+            <a href="#" class="logo">
+                <img class="img-logo" src="./assets/logo.png" alt="Hurricane Guard">
+            </a>
 
-    </nav>
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu"
+                aria-label="Open menu">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#">Safety Films</a></li>
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="nav-phone">
+                        <a href="tel:8884138038" class="nav-cta-btn">888-413-8038</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!--nav bar end-->
     <!--hero section start-->
     <section class="hero-section ">
@@ -321,6 +333,17 @@
         </div>
     </section>
     <!-- protection section end -->
+    <!-- residential section start -->
+    <section class="residential-section py-5">
+        <div class="container text-white ">
+            <h1>One Installation. One Investment.
+                <br> A Lifetime of Protection And Peace of Mind.
+            </h1>
+            <p>One film — total protection for every property.</p>
+            <button>Request free quote</button>
+        </div>
+    </section>
+    <!-- residential section end-->
 
     <!-- home section start -->
     <section class="home-section">
@@ -328,7 +351,8 @@
             <div class="row benefit-body g-4 g-lg-5 align-items-center">
                 <div class="col-lg-5">
                     <div class="benefit-image-wrap">
-                        <img src="./assets/img_h.png" alt="Family protected at home with hurricane safety film" class="benefit-image">
+                        <img src="./assets/img_h.png" alt="Family protected at home with hurricane safety film"
+                            class="benefit-image">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -345,68 +369,79 @@
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Keeps broken glass in place during storms</h4>
-                                    <p class="benefit-item-text">No flying shards, no sudden exposure to wind and rain.</p>
+                                    <p class="benefit-item-text">No flying shards, no sudden exposure to wind and rain.
+                                    </p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Prevents fading of furniture &amp; flooring</h4>
-                                    <p class="benefit-item-text">Blocks 99% of UV rays, keeping your interiors beautiful for years.</p>
+                                    <p class="benefit-item-text">Blocks 99% of UV rays, keeping your interiors beautiful
+                                        for years.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Enhances peace of mind for your family</h4>
-                                    <p class="benefit-item-text">Know that even if the unexpected happens, your loved ones are safer.</p>
+                                    <p class="benefit-item-text">Know that even if the unexpected happens, your loved
+                                        ones are safer.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Affordable alternative</h4>
-                                    <p class="benefit-item-text">No need for heavy shutters or costly window replacement.</p>
+                                    <p class="benefit-item-text">No need for heavy shutters or costly window
+                                        replacement.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Year-round comfort with lower energy costs</h4>
-                                    <p class="benefit-item-text">Film reduces solar heat, keeping rooms cooler and bills lower.</p>
+                                    <p class="benefit-item-text">Film reduces solar heat, keeping rooms cooler and bills
+                                        lower.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
@@ -417,7 +452,8 @@
                         </ul>
 
                         <blockquote class="benefit-callout">
-                            It's invisible protection that makes your home stronger, safer, and more comfortable every single day.
+                            It's invisible protection that makes your home stronger, safer, and more comfortable every
+                            single day.
                         </blockquote>
                     </div>
                 </div>
@@ -445,8 +481,9 @@
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
@@ -457,61 +494,71 @@
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Reduces risk of wind &amp; impact damage</h4>
-                                    <p class="benefit-item-text">Minimize costly repairs and protect valuable inventory.</p>
+                                    <p class="benefit-item-text">Minimize costly repairs and protect valuable inventory.
+                                    </p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Deters smash-and-grab break-in</h4>
-                                    <p class="benefit-item-text">Makes quick entry almost impossible, buying time and preventing losses.</p>
+                                    <p class="benefit-item-text">Makes quick entry almost impossible, buying time and
+                                        preventing losses.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Minimizes downtime after a storm</h4>
-                                    <p class="benefit-item-text">Broken windows can shut your doors for weeks; safety film helps you reopen faster.</p>
+                                    <p class="benefit-item-text">Broken windows can shut your doors for weeks; safety
+                                        film helps you reopen faster.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Maintains clear visibility</h4>
-                                    <p class="benefit-item-text">No dark tint — keep your bright, open look while staying protected.</p>
+                                    <p class="benefit-item-text">No dark tint — keep your bright, open look while
+                                        staying protected.</p>
                                 </div>
                             </li>
                             <li class="benefit-item">
                                 <span class="benefit-check" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
                                 <div>
                                     <h4 class="benefit-item-title">Professional finish</h4>
-                                    <p class="benefit-item-text">Blends seamlessly with your architecture, adding strength without changing style.</p>
+                                    <p class="benefit-item-text">Blends seamlessly with your architecture, adding
+                                        strength without changing style.</p>
                                 </div>
                             </li>
                         </ul>
@@ -524,7 +571,8 @@
                 </div>
                 <div class="col-lg-5 order-lg-2 order-1">
                     <div class="benefit-image-wrap">
-                        <img src="./assets/img_b (1).png" alt="Business professional protected with hurricane safety film" class="benefit-image">
+                        <img src="./assets/img_b (1).png"
+                            alt="Business professional protected with hurricane safety film" class="benefit-image">
                     </div>
                 </div>
             </div>
@@ -560,52 +608,64 @@
                     <article class="trust-card">
                         <div class="trust-icon" aria-hidden="true">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="24" cy="28" r="12" stroke="currentColor" stroke-width="2"/>
-                                <path d="M24 16V10M18 18l-4-4M30 18l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M24 22v6l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="28" r="12" stroke="currentColor" stroke-width="2" />
+                                <path d="M24 16V10M18 18l-4-4M30 18l4-4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M24 22v6l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <h3 class="trust-card-title">Top-Quality Films</h3>
-                        <p class="trust-card-text">Industry-leading materials — tested, certified, and backed by long-term warranties for peace of mind.</p>
+                        <p class="trust-card-text">Industry-leading materials — tested, certified, and backed by
+                            long-term warranties for peace of mind.</p>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <article class="trust-card">
                         <div class="trust-icon" aria-hidden="true">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="12" width="28" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
-                                <path d="M16 12V8h16v4" stroke="currentColor" stroke-width="2"/>
-                                <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="10" y="12" width="28" height="26" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M16 12V8h16v4" stroke="currentColor" stroke-width="2" />
+                                <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <h3 class="trust-card-title">15+ Years of Experience</h3>
-                        <p class="trust-card-text">Since 2008, we've been trusted across Florida to safeguard homes and businesses with proven hurricane protection.</p>
+                        <p class="trust-card-text">Since 2008, we've been trusted across Florida to safeguard homes and
+                            businesses with proven hurricane protection.</p>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <article class="trust-card">
                         <div class="trust-icon" aria-hidden="true">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
-                                <path d="M24 14v4M24 26v4M14 24h4M30 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2" />
+                                <path d="M24 14v4M24 26v4M14 24h4M30 24h4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <circle cx="24" cy="24" r="3" fill="currentColor" />
                             </svg>
                         </div>
                         <h3 class="trust-card-title">Fast &amp; Hassle-Free Service</h3>
-                        <p class="trust-card-text">From quote to installation, most projects are completed in just one day with minimal disruption.</p>
+                        <p class="trust-card-text">From quote to installation, most projects are completed in just one
+                            day with minimal disruption.</p>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <article class="trust-card">
                         <div class="trust-icon" aria-hidden="true">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 28c0-8 6-14 16-14s16 6 16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M14 28v6h20v-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                                <path d="M18 12l2 2 4-4M30 10l1 2 3-1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 28c0-8 6-14 16-14s16 6 16 14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M14 28v6h20v-6" stroke="currentColor" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                <path d="M18 12l2 2 4-4M30 10l1 2 3-1" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
                             </svg>
                         </div>
                         <h3 class="trust-card-title">Trusted Across Florida</h3>
-                        <p class="trust-card-text">Chosen by thousands of homeowners and business owners statewide for proven hurricane protection.</p>
+                        <p class="trust-card-text">Chosen by thousands of homeowners and business owners statewide for
+                            proven hurricane protection.</p>
                     </article>
                 </div>
             </div>
@@ -613,15 +673,51 @@
     </section>
     <!-- trust section end -->
 
-    <!-- residential section start -->
-    <section class="residential-section">
-        <div class="container">
-            <h1>One Installation. One Investment. A Lifetime of Protection And Peace of Mind.</h1>
-            <p>One film — total protection for every property.</p>
-            <button>Request free quote</button>
+    <!-- review section start -->
+    <section class="review-section">
+        <div class="container review-inner">
+            <div class="row review-cards g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                        </div>
+                        <blockquote class="review-quote">
+                            “I didn't realize how much peace of mind I'd get until the next storm hit”
+                        </blockquote>
+                        <cite class="review-author">— Amanda, Tampa FL</cite>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                            <span aria-hidden="true">★</span>
+                        </div>
+                        <blockquote class="review-quote">
+                            “Fast, professional install — and now I feel 100x safer during the storm season”
+                        </blockquote>
+                        <cite class="review-author">— Mark, Fort Lauderdale</cite>
+                    </article>
+                </div>
+            </div>
+
+            <h2 class="review-heading">
+                We're not just protecting windows —
+                <span class="review-highlight">we're protecting families, businesses,</span>
+                and peace of mind across Florida.
+            </h2>
         </div>
     </section>
-    <!-- residential section end-->
+    <!-- review section end -->
+
 
     <!-- contact footer start -->
     <footer class="site-footer">
@@ -643,19 +739,24 @@
                         <form class="contact-form" action="#" method="post">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control contact-input" placeholder="Name" required>
+                                    <input type="text" name="name" class="form-control contact-input" placeholder="Name"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="business" class="form-control contact-input" placeholder="Business Name (optional)">
+                                    <input type="text" name="business" class="form-control contact-input"
+                                        placeholder="Business Name (optional)">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="tel" name="phone" class="form-control contact-input" placeholder="Phone" required>
+                                    <input type="tel" name="phone" class="form-control contact-input"
+                                        placeholder="Phone" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control contact-input" placeholder="Email" required>
+                                    <input type="email" name="email" class="form-control contact-input"
+                                        placeholder="Email" required>
                                 </div>
                                 <div class="col-12">
-                                    <textarea name="message" class="form-control contact-input contact-textarea" rows="4" placeholder="Message..."></textarea>
+                                    <textarea name="message" class="form-control contact-input contact-textarea"
+                                        rows="4" placeholder="Message..."></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" class="contact-submit">SEND MESSAGE</button>
@@ -668,9 +769,10 @@
 
             <hr class="footer-divider">
 
-            <div class="footer-bar d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-4">
+            <div
+                class="footer-bar d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-4">
                 <div class="footer-brand d-flex align-items-center gap-3">
-                    <img src="./assets/logo.png" alt="Hurricane Guard" class="footer-logo">
+                    <img src="./assets/footer.png" alt="Hurricane Guard" class="footer-logo">
                 </div>
                 <div class="footer-meta text-lg-end">
                     <nav class="footer-nav" aria-label="Footer navigation">
@@ -694,5 +796,6 @@
 </body>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/Home.js"></script>
 
 </html>
