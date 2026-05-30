@@ -42,22 +42,25 @@
     </header>
     <!--nav bar end-->
     <!--hero section start-->
-    <section class="hero-section ">
-        <div class="hero-content text-white">
-            <h1>PROTECT YOUR HOME
-                <br> & Business
-            </h1>
-            <h3>with Hurricane Safety Film</h3>
-            <p>One film. Many layers of protection. Installed once. Works nonstop..</p>
-            <button>Contact us</button>
-            <ul class="d-flex  align-items-center gap-5">
-                <li>Hurricane defense</li>
-                <li>UV Protection</li>
-                <li>Glass security</li>
-            </ul>
-        </div>
-        <div class="hero-image ">
-            <img src="./assets/badge.png" alt="hero-image">
+    <section class="hero-section">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">PROTECT YOUR HOME</span>
+                    <span class="hero-title-line hero-title-line--sm">&amp; Business</span>
+                </h1>
+                <p class="hero-subtitle">with Hurricane Safety Film</p>
+                <p class="hero-desc">One film. Many layers of protection. Installed once. Works nonstop.</p>
+                <a href="#contact" class="hero-cta">Contact us</a>
+                <ul class="hero-features">
+                    <li>Hurricane defense</li>
+                    <li>UV Protection</li>
+                    <li>Glass security</li>
+                </ul>
+            </div>
+            <div class="hero-badge-wrap">
+                <img src="./assets/badge.png" alt="Special sale — $7.99 per square foot installed" class="hero-badge">
+            </div>
         </div>
     </section>
     <!--hero section end-->
@@ -319,9 +322,14 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- protection section end -->
+    <div class="brands-section py-5">
+        <div class="container">
             <div class="partners-bar">
-                <hr class="partners-divider">
-                <div class="partners-logos">
+                <div class="partners-logos ">
                     <img src="./assets/3m-dinoc-294w 1.png" alt="3M DI-NOC Architectural Finishes">
                     <img src="./assets/images+(1)-182w 1 (1).png" alt="Hunter Douglas Window Fashions">
                     <img src="./assets/SelectProVista-1024x318-88b50deb-360w 1.png" alt="SelectPro Vista">
@@ -331,8 +339,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- protection section end -->
+    </div>
+
     <!-- residential section start -->
     <section class="residential-section py-5">
         <div class="container text-white ">
@@ -616,8 +624,11 @@
                             </svg>
                         </div>
                         <h3 class="trust-card-title">Top-Quality Films</h3>
-                        <p class="trust-card-text">Industry-leading materials — tested, certified, and backed by
-                            long-term warranties for peace of mind.</p>
+                        <p class="trust-card-text">Industry-leading <br>
+                            materials — tested, <br>
+                            certified, and backed by <br>
+                            long-term warranties for <br>
+                            peace of mind.</p>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -632,8 +643,11 @@
                             </svg>
                         </div>
                         <h3 class="trust-card-title">15+ Years of Experience</h3>
-                        <p class="trust-card-text">Since 2008, we've been trusted across Florida to safeguard homes and
-                            businesses with proven hurricane protection.</p>
+                        <p class="trust-card-text">Since 2008, we've been <br>
+                            trusted across Florida to <br>
+                            safeguard homes and <br>
+                            businesses with proven <br>
+                            hurricane protection.</p>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -647,8 +661,11 @@
                             </svg>
                         </div>
                         <h3 class="trust-card-title">Fast &amp; Hassle-Free Service</h3>
-                        <p class="trust-card-text">From quote to installation, most projects are completed in just one
-                            day with minimal disruption.</p>
+                        <p class="trust-card-text">From quote to <br>
+                            installation, most projects <br>
+                            are completed in just <br>
+                            one day with minimal <br>
+                            disruption.</p>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -664,8 +681,11 @@
                             </svg>
                         </div>
                         <h3 class="trust-card-title">Trusted Across Florida</h3>
-                        <p class="trust-card-text">Chosen by thousands of homeowners and business owners statewide for
-                            proven hurricane protection.</p>
+                        <p class="trust-card-text">Chosen by thousands of <br>
+                            homeowners and <br>
+                            business owners <br>
+                            statewide for proven <br>
+                            hurricane protection.</p>
                     </article>
                 </div>
             </div>
@@ -720,7 +740,7 @@
 
 
     <!-- contact footer start -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact">
         <div class="container">
             <div class="row contact-grid g-4 g-lg-5">
                 <div class="col-lg-6">
