@@ -98,7 +98,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 12px 24px;
+    padding: 12px 44px;
     background-color: #fff;
 }
 
@@ -166,7 +166,7 @@ nav {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 62px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -445,7 +445,7 @@ nav {
         width: 0 !important;
     }
 
-    .hero-section > .hero-media {
+    .hero-section>.hero-media {
         display: block !important;
         position: relative !important;
         inset: auto !important;
@@ -487,7 +487,7 @@ nav {
         z-index: 3;
     }
 
-    .hero-section > .hero-inner {
+    .hero-section>.hero-inner {
         order: 2;
         position: relative !important;
         top: auto !important;
@@ -580,7 +580,11 @@ nav {
 
 .about-title-accent {
     display: block;
-    color: var(--pink-color);
+    background: var(--orange-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .about-intro {
@@ -658,15 +662,28 @@ nav {
 }
 
 .danger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: var(--pink-color);
     width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+}
+
+.danger-icon::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin-top: 12px;
+    background-color: var(--pink-color);
+    border-radius: 1px;
 }
 
 .danger-icon svg {
-    width: 100%;
-    height: 100%;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
 }
 
 .danger-title {
