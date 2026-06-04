@@ -29,3 +29,28 @@
         }
     });
 })();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.innerWidth < 768) {
+
+        new Swiper(".trustSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false
+            }
+        });
+
+    }
+
+});

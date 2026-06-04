@@ -216,6 +216,7 @@ nav {
 
     .nav-menu {
         flex: 0 0 100%;
+        justify-content: start;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
@@ -257,6 +258,7 @@ nav {
     .nav-cta-btn {
         display: block;
         text-align: center;
+        padding: 10px 20px !important;
         width: 100%;
     }
 }
@@ -658,7 +660,8 @@ nav {
 .danger-card {
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .danger-icon {
@@ -775,12 +778,19 @@ nav {
     color: white;
     padding: 40px;
     border-radius: 5px;
-    height: 119px;
 }
 
 .banner-mark {
     font-size: 5rem;
     color: white;
+}
+
+.text-life {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /* banner section end */
@@ -1129,6 +1139,39 @@ nav {
     margin: 0;
 }
 
+.trustSwiper {
+    padding-bottom: 45px;
+}
+
+.trustSwiper .swiper-slide {
+    padding: 0 15px;
+}
+
+.trustSwiper .trust-card {
+    height: 100%;
+}
+
+.trustSwiper .swiper-pagination {
+    bottom: 0 !important;
+}
+
+.trustSwiper .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    background: #f2d5ca;
+}
+
+.trustSwiper .swiper-pagination-bullet-active {
+    background: #f58a4b;
+}
+
+@media (min-width: 768px) {
+    .trustSwiper {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .trust-header {
         max-width: 100%;
@@ -1226,7 +1269,12 @@ nav {
 
     .review-card {
         padding: 24px 20px;
+        position: relative;
+        bottom: 120px;
+        background-color: #654579;
     }
+
+
 }
 
 /* review section end */
